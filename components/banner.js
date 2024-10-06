@@ -1,5 +1,6 @@
 import { useEffect } from 'react'
 import AnimScroll from "./animScroll"
+import Link from 'next/link';
 
 function Banner() {
 
@@ -19,8 +20,10 @@ function Banner() {
                     By using our software, you can create cool renderings and 3D models from hand-drawn sketches
                 </p>
                 <div className="anim-2 mt-7">
+                  <Link href="/image-generation">
                     <button className="bg-btnDark text-white w-44 mx-3 h-16 font-medium rounded-lg hover:shadow-xl transition-all">Get started</button>
-                    <button className="bg-btnLight text-blue w-44 mx-3 h-16 font-medium rounded-lg hover:shadow-xl transition-all">Watch a video</button>
+                  </Link>  
+                  <button className="bg-btnLight text-blue w-44 mx-3 h-16 font-medium rounded-lg hover:shadow-xl transition-all">Watch a video</button>
                 </div>
             </div>
             <img className="anim-3 mt-10 absolute left-0 right-0 md:relative md:mt-20 shadow-2xl" src="/dashboard2.PNG" alt="software dashboard" />
